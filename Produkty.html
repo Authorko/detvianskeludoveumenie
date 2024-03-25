@@ -38,6 +38,9 @@
       <li class="nav-item">
         <a class="nav-link" href="prihlásenie.html">Prihlásenie</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" data-target="#cartModal"><i class="fa-solid fa-cart-shopping" style="color: #007bff;"></i></a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -47,13 +50,68 @@
   <div class="card text-center card-hover shadow-lg">
     <div class="card-body">
       <div class="container-img">
-        <h1 class="display-4 heading-text text-center align-items-start mt-3">Naše produkty</h1>
-        <p class="lead mb-3">Kraj pod Poľanou bol oddávna známy nielen svojráznym speváckym a tanečným prejavom, ale aj remeselnou zručnosťou.</p>
+        <h1 class="card-title product-title display-4 heading-text text-center align-items-start mt-3">Naše produkty</h1>
+        <p class="lead mb-3 card-text product-description">Kraj pod Poľanou bol oddávna známy nielen svojráznym speváckym a tanečným prejavom, ale aj remeselnou zručnosťou.</p>
     </div>
     </div>
   </div>
 </div>
   
+
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Váš nakupný košík
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Produkt</th>
+              <th scope="col">Cena</th>
+              <th scope="col">Počet</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="img/obuv2.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Kožené krpce s mosadznou prackou</td>
+              <td>90$</td>
+              <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+              <td>90$</td>
+              <td>
+                <a href="#" class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Celkom: <span class="price text-primary">90$</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavrieť</button>
+        <button type="button" class="btn btn-primary">Potvrdiť</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
@@ -90,7 +148,7 @@
         <div class="product-info">
           <h3 class="product-title">Goralský kožuch detsky</h3>
           <p class="product-description">Súčasť mužského kroja, siahajúca od pliec do pása - väčšinou presahoval až na opasok.</p>
-          <p class="product-price">Cena 99,99€</p>
+          <p class="product-price">Cena 199,99€</p>
           
           <a class="btn btn-primary" href="produkt8.html" role="button">Kúpiť</a>
         </div>
@@ -114,16 +172,21 @@
 </div>
 
 
+
+
+
+
+
 <div class="container mt-5">
   <div class="text-center">
-    <h1 class="display-4">Výšívky</h1>
+    <h1 class="display-4">Ručne vyšívané výrobky</h1>
   </div>
 </div>
 
 
 <div class="container mt-5" id="pozrietvýšivky">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 mx-auto">
       <div class="product-card">
         <div class="product-image">
           <img src="img/satkap.jpg" alt="Product Image">
@@ -132,36 +195,25 @@
           <h3 class="product-title">Šatka na hlavu</h3>
           <p class="product-description">Ručne vyšívaná šatka na hlavu ku ženskému kroju.</p>
           <p class="product-price">Cena 79,99€</p>
+          <p class="p-1"></p>
           <a class="btn btn-primary" href="produkt4.html" role="button">Kúpiť</a>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 mx-auto">
       <div class="product-card">
         <div class="product-image">
           <img src="img/dekap.jpg" alt="Product Image">
         </div>
         <div class="product-info">
-          <h3 class="product-title">Názov</h3>
-          <p class="product-description">Popis.</p>
-          <p class="product-price">Cena €</p>
+          <h3 class="product-title">Ludová plachta</h3>
+          <p class="product-description">Na Slovensku najrozšírenejšia textilná pomôcka na prenášanie rozličných bremien.</p>
+          <p class="product-price">35€</p>
           <a class="btn btn-primary" href="produkt5.html" role="button">Kúpiť</a>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/300" alt="Product Image">
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Názov</h3>
-          <p class="product-description">Popis.</p>
-          <p class="product-price">Cena €</p>
-          <a class="btn btn-primary" href="produkt6.html" role="button">Kúpiť</a>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div>
 
@@ -184,9 +236,9 @@
         <div class="product-info">
           <h3 class="product-title">Kožené krpce</h3>
           <p class="product-description">Krpce sú nízka kožená mužská, ženská a detská obuv z bravčovej alebo hovädzej kože.</p>
-          <p class="product-price">80€</p>
+          <p class="product-price">40€</p>
+          <p class="p-5"></p>
           <a class="btn btn-primary" href="produkt1.html" role="button">Kúpiť</a>
-          <p class="p-1"></p>
         </div>
       </div>
     </div>
@@ -198,7 +250,8 @@
         <div class="product-info">
           <h3 class="product-title">Kožené krpce s mosadznou prackou</h3>
           <p class="product-description">Tento typ krpcov nie je upínaný koženým páskom, ale sú zapínané mosadznou prackou.</p>
-          <p class="product-price">90€</p>
+          <p class="product-price">35€</p>
+          <p class="p-5"></p>
           <a class="btn btn-primary" href="produkt2.html" role="button">Kúpiť</a>
         </div>
       </div>
@@ -211,7 +264,8 @@
         <div class="product-info">
           <h3 class="product-title">Ženské kožené krojové čižmy</h3>
           <p class="product-description">Predstavujú novodobú obuv našich predkov.</p>
-          <p class="product-price">119.9€</p>
+          <p class="product-price">49,99€</p>
+          <p class="px-5"></p>
           <a class="btn btn-primary" href="produkt3.html" role="button">Kúpiť</a>
         </div>
       </div>

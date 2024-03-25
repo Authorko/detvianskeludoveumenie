@@ -40,6 +40,9 @@
       <li class="nav-item">
         <a class="nav-link" href="prihlásenie.html">Prihlásenie</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" data-target="#cartModal"><i class="fa-solid fa-cart-shopping" style="color: #007bff;"></i></a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -49,7 +52,56 @@
   
 <div style="height: 115px;"></div>
 
-
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Váš nakupný košík
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Produkt</th>
+              <th scope="col">Cena</th>
+              <th scope="col">Počet</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="img/obuv2.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Kožené krpce s mosadznou prackou</td>
+              <td>90$</td>
+              <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+              <td>90$</td>
+              <td>
+                <a href="#" class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Celkom: <span class="price text-primary">90$</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavrieť</button>
+        <button type="button" class="btn btn-primary">Potvrdiť</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="container item-container">
     <div class="row">
@@ -60,7 +112,7 @@
         <h2>Goralský kožuch detský</h2>
         <p>Materiál bol už prevažne priemyselne vyrábaný, často zdobený nášivkami a gombíkami.</p>
         
-        <p class="product-price">Cena 99,99€</p>
+        <p class="product-price">Cena 199,99€</p>
         <button class="btn btn-primary shadow-lg">Pridať do košíka</button>
       </div>
     </div>
