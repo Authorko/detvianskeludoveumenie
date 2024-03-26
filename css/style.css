@@ -507,3 +507,24 @@ img {
   .modal-footer {
     padding-top: 0rem;
   }
+
+  /* Define font sizes for different screen sizes */
+  @media (max-width: 576px) {
+    .product-title {
+      font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+    .product-description {
+      font-size: 0.8rem; /* Adjust font size for small screens */
+    }
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    .product-title {
+      font-size: 3rem; /* Adjust font size for medium screens */
+    }
+    .product-description {
+      font-size: 1.25rem; /* Adjust font size for medium screens */
+    }
+  }
+
+  /* Add more media queries as needed for larger screen sizes */
