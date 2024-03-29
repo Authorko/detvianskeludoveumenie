@@ -1,4 +1,8 @@
 /*gallery*/
+.body{
+    font-family: sans-serif;
+}
+
 .photo-gallery {
   color:#313437;
   background-color:#fff;
@@ -508,6 +512,8 @@ img {
     padding-top: 0rem;
   }
 
+
+  
   /* Define font sizes for different screen sizes */
   @media (max-width: 576px) {
     .product-title {
